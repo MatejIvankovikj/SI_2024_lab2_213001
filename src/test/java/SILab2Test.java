@@ -45,5 +45,11 @@ class SILab2Test {
 
         Item item6 = new Item("item6", "1123", 250, 0.1f);
         assertTrue(SILab2.checkCart(Collections.singletonList(item6), 30)); // suma = 25, payment = 30 --> True
+
+        Item item7 = new Item("item7", "1123", 350, 0.1f);
+        assertFalse(SILab2.checkCart(Collections.singletonList(item7), 30)); // suma = 35, payment = 30 --> False
+        
+        Item item8 = new Item("item8", "0123", 300, 0.1f);
+        assertTrue(SILab2.checkCart(Collections.singletonList(item8), 30)); // suma = 30, payment = 30 --> True
     }
 }
