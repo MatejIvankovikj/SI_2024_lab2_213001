@@ -19,7 +19,7 @@ _____________________________________
 
 ### 5. На мене ми беа потребни 8 тест случаи според Multiple Condition критериумот за да биде исполнет условот if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'). Тоа се следните: 
 
-void testMultipleCondition() {
+    void testMultipleCondition() {
 
         Item item1 = new Item("item1", "0123", 350, 0.1f);
         assertTrue(SILab2.checkCart(Collections.singletonList(item1), 30)); // suma = 35 - 30 = 5, payment = 30 --> True
